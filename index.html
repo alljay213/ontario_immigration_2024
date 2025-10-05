@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ontario Immigration 2024 – D3 Visualization</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Ontario Immigration 2024</h1>
+      <p class="subtitle">
+        Monthly admissions by category (Economic, Family, Refugee, Other)
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="chart-card">
+        <div class="chart-header">
+          <h2>Trends by Category</h2>
+          <div id="legend" class="legend"></div>
+        </div>
+        <svg
+          id="line-chart"
+          width="960"
+          height="420"
+          role="img"
+          aria-label="Monthly immigration by category in 2024"
+        ></svg>
+        <p class="note">
+          Data: synthetic sample for learning, wide format CSV (12 rows).
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <a href="https://d3js.org/" target="_blank" rel="noopener">D3.js v7</a>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
